@@ -16,219 +16,408 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMv-CC-xhd" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMv-CC-xhd" customClass="MBCalcButton">
                                 <rect key="frame" x="100" y="350" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YSG-kG-pnV"/>
+                                    <constraint firstAttribute="width" constant="60" id="hvn-Vx-aBB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zE-q7-fKh"/>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYT-x7-3de"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPi-It-tJS" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPi-It-tJS" customClass="MBCalcButton">
                                 <rect key="frame" x="100" y="282" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4r7-aI-ZLm"/>
+                                    <constraint firstAttribute="width" constant="60" id="kgF-4d-z93"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cf3-30-Pqs"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQ5-2w-dwC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9N-RJ-KQj" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9N-RJ-KQj" customClass="MBCalcButton">
                                 <rect key="frame" x="168" y="350" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="F65-Ea-dkA"/>
+                                    <constraint firstAttribute="width" constant="60" id="Utf-oR-4tz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKh-I9-Q23"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0WE-KH-vlx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkZ-fF-6oU" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkZ-fF-6oU" customClass="MBCalcButton">
                                 <rect key="frame" x="168" y="214" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EAt-H1-jpZ"/>
+                                    <constraint firstAttribute="width" constant="60" id="boi-7k-lyA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQP-1a-xIl"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZIg-MW-OEV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cd-gy-7un" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cd-gy-7un" customClass="MBCalcButton">
                                 <rect key="frame" x="236" y="214" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0d7-O8-Gd9"/>
+                                    <constraint firstAttribute="height" constant="60" id="2lw-LD-0Oi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWo-J6-Tum"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9c-yP-4dU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-BY-09n" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-BY-09n" customClass="MBCalcButton">
                                 <rect key="frame" x="168" y="282" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="43M-ry-E9Y"/>
+                                    <constraint firstAttribute="width" constant="60" id="w34-9A-ybY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmE-Ao-Ozb"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7KL-24-kgI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-f0-mD8" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-f0-mD8" customClass="MBCalcButton">
                                 <rect key="frame" x="236" y="282" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9za-zK-DWe"/>
+                                    <constraint firstAttribute="width" constant="60" id="aYz-rx-AJc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67N-zj-cIO"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leX-HF-SBr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2k-hg-rCg" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2k-hg-rCg" customClass="MBCalcButton">
                                 <rect key="frame" x="100" y="146" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2XJ-Gm-cZU"/>
+                                    <constraint firstAttribute="width" constant="60" id="zyE-7c-chN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MB2-v9-kAL"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOl-bS-F74"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p6-tP-LDV" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p6-tP-LDV" customClass="MBCalcButton">
                                 <rect key="frame" x="168" y="146" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="66p-dr-mqh"/>
+                                    <constraint firstAttribute="height" constant="60" id="f2m-e8-7XF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBO-MH-EUp"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FkR-Rg-avB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyU-Rn-oFW" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyU-Rn-oFW" customClass="MBCalcButton">
                                 <rect key="frame" x="236" y="146" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="meZ-F0-sfh"/>
+                                    <constraint firstAttribute="width" constant="60" id="r8a-Cn-EQv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lsx-uI-jyZ"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wA-Yj-X8R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kab-PL-1mc" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kab-PL-1mc" customClass="MBCalcButton">
                                 <rect key="frame" x="100" y="214" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Uc4-KH-k26"/>
+                                    <constraint firstAttribute="width" constant="60" id="rzL-GU-GLD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4t-Ua-p3b"/>
+                                    <action selector="touchOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kh3-Nt-ea8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTo-LB-a9o" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTo-LB-a9o" customClass="MBCalcButton">
                                 <rect key="frame" x="304" y="146" width="55" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Ctt-vE-N9Q"/>
+                                    <constraint firstAttribute="height" constant="55" id="L7G-vA-Brw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="/">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxa-UH-fKG"/>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3c9-6d-oJX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dn-qk-b6B" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dn-qk-b6B" customClass="MBCalcButton">
                                 <rect key="frame" x="304" y="209" width="55" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7cz-5X-qRL"/>
+                                    <constraint firstAttribute="width" constant="55" id="Uxg-Pi-i9b"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="*">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QwN-ql-t4r"/>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qwn-NC-reO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxi-4u-zLb" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxi-4u-zLb" customClass="MBCalcButton">
                                 <rect key="frame" x="304" y="335" width="55" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="bNP-6d-mpi"/>
+                                    <constraint firstAttribute="width" constant="55" id="zkF-Q3-4Fc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJ5-qG-Y8d"/>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiY-fX-7gp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s50-4u-Dhb" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s50-4u-Dhb" customClass="MBCalcButton">
                                 <rect key="frame" x="100" y="418" width="259" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6yi-wS-HYw"/>
+                                    <constraint firstAttribute="width" constant="259" id="ggM-wl-cGy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="69"/>
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77G-9C-32k"/>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5m-ga-mlp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c10-MM-ew6" customClass="MBCalcButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c10-MM-ew6" customClass="MBCalcButton">
                                 <rect key="frame" x="304" y="272" width="55" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="hh5-sQ-jd1"/>
+                                    <constraint firstAttribute="width" constant="55" id="xex-fv-RCD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAi-1s-FIW"/>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3E-cU-250"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2em-vc-tCc">
-                                <rect key="frame" x="100" y="79" width="259" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-Uu-wDA" customClass="MBCalcButton">
+                                <rect key="frame" x="236" y="350" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JOR-y6-bqt"/>
+                                    <constraint firstAttribute="width" constant="60" id="m3b-pa-btU"/>
+                                </constraints>
+                                <state key="normal" title="delLast">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDelLastButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2dI-LV-alm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6R-SU-DVn" customClass="MBCalcButton">
+                                <rect key="frame" x="37" y="146" width="55" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gMK-3B-xQk"/>
+                                    <constraint firstAttribute="width" constant="55" id="kq9-Uf-0aK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="(">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHD-Nj-RZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3Q-7d-dAy" customClass="MBCalcButton">
+                                <rect key="frame" x="37" y="209" width="55" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="9Ju-dd-LLC"/>
+                                    <constraint firstAttribute="width" constant="55" id="r4J-au-hfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title=")">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naw-gJ-n7K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2em-vc-tCc">
+                                <rect key="frame" x="58" y="77" width="259" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="eVm-Ee-gGQ"/>
+                                    <constraint firstAttribute="height" constant="51" id="fTJ-tC-n6x"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-Uu-wDA" customClass="MBCalcButton">
-                                <rect key="frame" x="236" y="350" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEW-S1-9XI" customClass="MBCalcButton">
+                                <rect key="frame" x="37" y="272" width="55" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="d"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="7Ym-dK-RK3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="NAz-n6-Hid"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="X8H-OU-F7Q"/>
+                                    <constraint firstAttribute="height" constant="55" id="kpg-r8-8Pi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="delAll">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="touchCalcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oet-0k-69H"/>
+                                    <action selector="touchDelAllButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1X-hd-hrp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7dn-qk-b6B" firstAttribute="leading" secondItem="4Cd-gy-7un" secondAttribute="trailing" constant="8" id="2dp-Tl-ztV"/>
+                            <constraint firstItem="r9N-RJ-KQj" firstAttribute="top" secondItem="ixo-BY-09n" secondAttribute="bottom" constant="8" id="2iB-R8-6Xh"/>
+                            <constraint firstItem="a6R-SU-DVn" firstAttribute="top" secondItem="2em-vc-tCc" secondAttribute="bottom" constant="18" id="3cS-ax-dZH"/>
+                            <constraint firstItem="fkZ-fF-6oU" firstAttribute="top" secondItem="4p6-tP-LDV" secondAttribute="bottom" constant="8" id="46X-41-jWM"/>
+                            <constraint firstAttribute="trailing" secondItem="c10-MM-ew6" secondAttribute="trailing" constant="16" id="5cs-JZ-Qwd"/>
+                            <constraint firstItem="r9N-RJ-KQj" firstAttribute="leading" secondItem="jMv-CC-xhd" secondAttribute="trailing" constant="8" id="5tf-7l-Nsp"/>
+                            <constraint firstItem="CyU-Rn-oFW" firstAttribute="top" secondItem="2em-vc-tCc" secondAttribute="bottom" constant="18" id="70b-fa-KqL"/>
+                            <constraint firstItem="4p6-tP-LDV" firstAttribute="leading" secondItem="w2k-hg-rCg" secondAttribute="trailing" constant="8" id="7gI-ov-5a7"/>
+                            <constraint firstAttribute="trailing" secondItem="s50-4u-Dhb" secondAttribute="trailing" constant="16" id="8gt-Pf-xNf"/>
+                            <constraint firstItem="TPi-It-tJS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="8rE-d4-ef8"/>
+                            <constraint firstItem="kab-PL-1mc" firstAttribute="leading" secondItem="C3Q-7d-dAy" secondAttribute="trailing" constant="8" id="AuU-GY-kX8"/>
+                            <constraint firstItem="CyU-Rn-oFW" firstAttribute="leading" secondItem="4p6-tP-LDV" secondAttribute="trailing" constant="8" id="C5k-gQ-sqS"/>
+                            <constraint firstItem="w2k-hg-rCg" firstAttribute="top" secondItem="2em-vc-tCc" secondAttribute="bottom" constant="18" id="Cvl-sj-D6m"/>
+                            <constraint firstItem="4p6-tP-LDV" firstAttribute="top" secondItem="2em-vc-tCc" secondAttribute="bottom" constant="18" id="EYE-wC-oJP"/>
+                            <constraint firstItem="pTo-LB-a9o" firstAttribute="top" secondItem="2em-vc-tCc" secondAttribute="bottom" constant="18" id="FSe-90-2O5"/>
+                            <constraint firstItem="pTo-LB-a9o" firstAttribute="leading" secondItem="CyU-Rn-oFW" secondAttribute="trailing" constant="8" id="Gbc-zz-scn"/>
+                            <constraint firstAttribute="trailing" secondItem="7dn-qk-b6B" secondAttribute="trailing" constant="16" id="J7p-PX-eGN"/>
+                            <constraint firstItem="c10-MM-ew6" firstAttribute="leading" secondItem="JNW-f0-mD8" secondAttribute="trailing" constant="8" id="JFW-wQ-6LP"/>
+                            <constraint firstItem="fkZ-fF-6oU" firstAttribute="leading" secondItem="kab-PL-1mc" secondAttribute="trailing" constant="8" id="JJo-qT-dHW"/>
+                            <constraint firstItem="ixo-BY-09n" firstAttribute="leading" secondItem="TPi-It-tJS" secondAttribute="trailing" constant="8" id="JSU-xq-FA7"/>
+                            <constraint firstItem="ixo-BY-09n" firstAttribute="leading" secondItem="TPi-It-tJS" secondAttribute="trailing" constant="8" id="Jng-8M-pS8"/>
+                            <constraint firstItem="mxi-4u-zLb" firstAttribute="top" secondItem="c10-MM-ew6" secondAttribute="bottom" constant="8" id="Jt7-FH-DUy"/>
+                            <constraint firstItem="6RI-Uu-wDA" firstAttribute="leading" secondItem="r9N-RJ-KQj" secondAttribute="trailing" constant="8" id="Ker-1T-xoc"/>
+                            <constraint firstAttribute="trailing" secondItem="mxi-4u-zLb" secondAttribute="trailing" constant="16" id="OXA-3r-DPg"/>
+                            <constraint firstItem="w2k-hg-rCg" firstAttribute="leading" secondItem="a6R-SU-DVn" secondAttribute="trailing" constant="8" id="Onz-Zl-NI8"/>
+                            <constraint firstItem="LEW-S1-9XI" firstAttribute="top" secondItem="C3Q-7d-dAy" secondAttribute="bottom" constant="8" id="QaB-10-Jx6"/>
+                            <constraint firstItem="4Cd-gy-7un" firstAttribute="top" secondItem="CyU-Rn-oFW" secondAttribute="bottom" constant="8" id="RKh-0X-8pJ"/>
+                            <constraint firstItem="kab-PL-1mc" firstAttribute="leading" secondItem="C3Q-7d-dAy" secondAttribute="trailing" constant="8" id="T4o-f7-jzT"/>
+                            <constraint firstItem="s50-4u-Dhb" firstAttribute="top" secondItem="6RI-Uu-wDA" secondAttribute="bottom" constant="8" id="Tze-3n-hTH"/>
+                            <constraint firstItem="jMv-CC-xhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="VBc-8E-1jb"/>
+                            <constraint firstItem="C3Q-7d-dAy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="37" id="W6y-Eq-3Rt"/>
+                            <constraint firstItem="w2k-hg-rCg" firstAttribute="leading" secondItem="a6R-SU-DVn" secondAttribute="trailing" constant="8" id="WOz-vv-Phb"/>
+                            <constraint firstAttribute="trailing" secondItem="pTo-LB-a9o" secondAttribute="trailing" constant="16" id="YNt-sz-Xg5"/>
+                            <constraint firstItem="kab-PL-1mc" firstAttribute="top" secondItem="w2k-hg-rCg" secondAttribute="bottom" constant="8" id="Yen-AG-Tnh"/>
+                            <constraint firstItem="mxi-4u-zLb" firstAttribute="leading" secondItem="6RI-Uu-wDA" secondAttribute="trailing" constant="8" id="ZH5-jQ-Kv6"/>
+                            <constraint firstItem="7dn-qk-b6B" firstAttribute="top" secondItem="pTo-LB-a9o" secondAttribute="bottom" constant="8" id="ckI-f6-cJS"/>
+                            <constraint firstItem="a6R-SU-DVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="37" id="cpE-g1-jeU"/>
+                            <constraint firstItem="pTo-LB-a9o" firstAttribute="leading" secondItem="CyU-Rn-oFW" secondAttribute="trailing" constant="8" id="dzi-ec-AWA"/>
+                            <constraint firstItem="JNW-f0-mD8" firstAttribute="leading" secondItem="ixo-BY-09n" secondAttribute="trailing" constant="8" id="fNQ-0K-RLA"/>
+                            <constraint firstItem="JNW-f0-mD8" firstAttribute="top" secondItem="4Cd-gy-7un" secondAttribute="bottom" constant="8" id="fOV-3U-heF"/>
+                            <constraint firstItem="fkZ-fF-6oU" firstAttribute="leading" secondItem="kab-PL-1mc" secondAttribute="trailing" constant="8" id="foj-rm-0aB"/>
+                            <constraint firstItem="C3Q-7d-dAy" firstAttribute="top" secondItem="a6R-SU-DVn" secondAttribute="bottom" constant="8" id="gfX-89-h79"/>
+                            <constraint firstItem="4Cd-gy-7un" firstAttribute="leading" secondItem="fkZ-fF-6oU" secondAttribute="trailing" constant="8" id="iAk-6W-mmo"/>
+                            <constraint firstItem="mxi-4u-zLb" firstAttribute="leading" secondItem="6RI-Uu-wDA" secondAttribute="trailing" constant="8" id="jEA-Pm-wSB"/>
+                            <constraint firstItem="6RI-Uu-wDA" firstAttribute="leading" secondItem="r9N-RJ-KQj" secondAttribute="trailing" constant="8" id="lUh-iK-bPQ"/>
+                            <constraint firstItem="TPi-It-tJS" firstAttribute="top" secondItem="kab-PL-1mc" secondAttribute="bottom" constant="8" id="nm8-AH-Zxs"/>
+                            <constraint firstItem="JNW-f0-mD8" firstAttribute="leading" secondItem="ixo-BY-09n" secondAttribute="trailing" constant="8" id="oP5-ve-MLZ"/>
+                            <constraint firstItem="s50-4u-Dhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="oPP-WO-oeb"/>
+                            <constraint firstItem="4p6-tP-LDV" firstAttribute="leading" secondItem="w2k-hg-rCg" secondAttribute="trailing" constant="8" id="r4K-SM-Pg5"/>
+                            <constraint firstItem="2em-vc-tCc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="rCO-CV-jHK"/>
+                            <constraint firstItem="LEW-S1-9XI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="37" id="rlU-qT-Twl"/>
+                            <constraint firstItem="ixo-BY-09n" firstAttribute="top" secondItem="fkZ-fF-6oU" secondAttribute="bottom" constant="8" id="srh-E7-Cv1"/>
+                            <constraint firstItem="4Cd-gy-7un" firstAttribute="leading" secondItem="fkZ-fF-6oU" secondAttribute="trailing" constant="8" id="uCj-BQ-yz0"/>
+                            <constraint firstItem="6RI-Uu-wDA" firstAttribute="top" secondItem="JNW-f0-mD8" secondAttribute="bottom" constant="8" id="vO7-YY-vxr"/>
+                            <constraint firstItem="2em-vc-tCc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="58" id="vpj-xa-IeI"/>
+                            <constraint firstItem="TPi-It-tJS" firstAttribute="leading" secondItem="LEW-S1-9XI" secondAttribute="trailing" constant="8" id="wt8-sa-6CH"/>
+                            <constraint firstItem="r9N-RJ-KQj" firstAttribute="leading" secondItem="jMv-CC-xhd" secondAttribute="trailing" constant="8" id="wzb-DN-OON"/>
+                            <constraint firstItem="7dn-qk-b6B" firstAttribute="leading" secondItem="4Cd-gy-7un" secondAttribute="trailing" constant="8" id="xAZ-TF-AkQ"/>
+                            <constraint firstItem="c10-MM-ew6" firstAttribute="top" secondItem="7dn-qk-b6B" secondAttribute="bottom" constant="8" id="yVV-Ge-qb9"/>
+                            <constraint firstItem="jMv-CC-xhd" firstAttribute="top" secondItem="TPi-It-tJS" secondAttribute="bottom" constant="8" id="zDF-Rv-VZT"/>
+                            <constraint firstItem="c10-MM-ew6" firstAttribute="leading" secondItem="JNW-f0-mD8" secondAttribute="trailing" constant="8" id="zFT-MW-ylI"/>
+                            <constraint firstItem="CyU-Rn-oFW" firstAttribute="leading" secondItem="4p6-tP-LDV" secondAttribute="trailing" constant="8" id="zg7-tD-xRi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Calculator" id="Zw4-T1-prA"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="heightOfResLabel" destination="fTJ-tC-n6x" id="jcv-da-330"/>
                         <outlet property="resultLabel" destination="2em-vc-tCc" id="bg1-yF-WyL"/>
                     </connections>
                 </viewController>

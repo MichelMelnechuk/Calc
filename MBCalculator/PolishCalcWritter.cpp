@@ -8,77 +8,92 @@
 
 #include "PolishCalcWritter.h"
 
-void сompareOperatorsAndAddToStack(stack<char> &paramStack,vector<string> &expresion, char op1)
+void PolishCalcWritter::сompareOperatorsAndAddToStack(stack<char> &paramStack,vector<string> &expresion, char op1)
 {
     if (paramStack.empty()) {
         paramStack.push(op1);
         return;
     }
+    
     char top = paramStack.top();
     string strTop(1,top);
-    if (getPrioritet(op1) > getPrioritet(top))  paramStack.push(op1);
-    if (getPrioritet(op1) < getPrioritet(top)) {
-        expresion.push_back(strTop);
-        paramStack.pop();
-        if(!paramStack.empty()) {
-            сompareOperatorsAndAddToStack(paramStack,expresion,op1);
+    if(strTop == "(") {
+        paramStack.push(op1);
+        return;
+    }
+    if (op1 == ')')  {
+        while(paramStack.top() != '(') {
+            if((strTop != ")") ||
+               (strTop != "("))
+                expresion.push_back(strTop);
+            paramStack.pop();
         }
+        paramStack.pop();
+        return;
+    }
+    if (getPrioritet(op1) > getPrioritet(top)) {
+        paramStack.push(op1);
+        return;
+    }
+    if (getPrioritet(op1) < getPrioritet(top)) {
+        if((strTop != ")") ||
+           (strTop != "("))
+            expresion.push_back(strTop);
+        paramStack.pop();
+        сompareOperatorsAndAddToStack(paramStack,expresion,op1);
     }
     if (getPrioritet(op1) == getPrioritet(top)) {
-        expresion.push_back(strTop);
+        if((strTop != ")") ||
+           (strTop != "("))
+            expresion.push_back(strTop);
         paramStack.pop();
         paramStack.push(op1);
     }
 }
 
-vector<string> generatePolishStr(string &paramStr)
+vector<string> PolishCalcWritter::generatePolishStr(string &paramStr)
 {
     stack<char> operatorsStack;
-    vector<string> expresion ;
+    vector<string> expression ;
     string tempOperand = "";
     
     if (paramStr[0] == '-') {
-        tempOperand+=paramStr[0];
-        paramStr.erase(paramStr.begin());
-        
+        tempOperand += "-";
+        paramStr.erase(paramStr.begin() + 0);
     }
+    
+    
     for (int i = 0; i < paramStr.length(); i++) {
         if (isdigit(paramStr[i]) || (paramStr[i] == '.')) {
             string tempStr(1,paramStr[i]);
-            tempOperand += tempStr;
-        } else {
-            if (paramStr[0] == '-') {
-                string tempStr(1,paramStr[0]);
-                tempOperand += tempStr;
-                paramStr[0] = 'x';
-            } else { expresion.push_back(tempOperand);
-                tempOperand = "";
-                сompareOperatorsAndAddToStack(operatorsStack, expresion, paramStr[i]);
+            tempOperand += paramStr[i];
+        } else if (!isdigit(paramStr[i])){
+            if(tempOperand !="")
+                expression.push_back(tempOperand);
+            tempOperand = "";
+            сompareOperatorsAndAddToStack(operatorsStack, expression, paramStr[i]);
             }
             
         }
-    }
-    expresion.push_back(tempOperand);
+    if(tempOperand !="")expression.push_back(tempOperand);
     while (!operatorsStack.empty()) {
-        string tempStr(1,operatorsStack.top());
-        expresion.push_back(tempStr);
+        string strTop(1,operatorsStack.top());
+        if((strTop != ")") ||
+           (strTop != "("))
+            expression.push_back(strTop);
         operatorsStack.pop();
     }
-    return expresion;
+    return expression;
 }
 
-double calculatePolishStr(string paramStr) // ??? vector to string ?
+double PolishCalcWritter::calculatePolishStr(string paramStr)
 {
-    vector<string> expression = generatePolishStr(paramStr);
     double result = 0;
+    if (paramStr.empty()) return result;
+    vector<string> expression = generatePolishStr(paramStr);
     int i = 0;
-    
-    while(expression.size() !=1) {
-        char firstElm = *expression[i].c_str();
-        if (*expression[i].c_str() == '-' & i == 0) {
-            firstElm = '1';
-        }
-        if (!isdigit(firstElm) ) {
+    while(expression.size() != 1) {
+        if (!stringIsDigit(expression[i])) {
             double nextOperand = numOperandFromVector(expression[i-1]);
             double prevOperand = numOperandFromVector(expression[i-2]);
             char opertr = *expression[i].c_str();
@@ -94,8 +109,7 @@ double calculatePolishStr(string paramStr) // ??? vector to string ?
     return result;
 }
 
-
-double numOperandFromVector(string paramStr)
+double PolishCalcWritter::numOperandFromVector(string paramStr)
 {
     double operand = 0;
     string strOperand = "";
@@ -107,7 +121,15 @@ double numOperandFromVector(string paramStr)
     return operand;
 }
 
-double calculateExpression(char opertr,double oprnd1,double oprnd2){
+bool PolishCalcWritter::stringIsDigit(string s)
+{
+    for (int i = 0; i < s.length(); i++) {
+        if (!isdigit(s[i]) & (s[i] != '.') & s.length() == 1) return false;
+    }
+    return true;
+}
+
+double PolishCalcWritter::calculateExpression(char opertr,double oprnd1,double oprnd2){
     double result = 0;
     switch (opertr) {
         case '*':
@@ -115,7 +137,7 @@ double calculateExpression(char opertr,double oprnd1,double oprnd2){
             break;
         case '/':
             if (oprnd1  == 0 || oprnd2 == 0) {
-                cout << "division on zero!!";
+                cout<<"crash on PolishCalcWritter::calculateExpression";
                 exit(1);
             } else {
                 result = oprnd1/oprnd2;
@@ -128,16 +150,16 @@ double calculateExpression(char opertr,double oprnd1,double oprnd2){
             result = oprnd1-oprnd2;
             break;
         default:
-            cout<<"something wrong with post fix string operators";
+            cout<<"crash on PolishCalcWritter::calculateExpression";
+            exit(1);
             break;
     }
     return result;
 }
 
-int getPrioritet(char s)
+int PolishCalcWritter::getPrioritet(char s)
 {
-    if (s == '*' || s== '/') {
-        return 2;
-    }
+    if (s ==  '(' || s == ')') return 3;
+    if (s == '*' || s== '/')   return 2;
     return 1;
 }

@@ -9,29 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MBCalculator/MBCalulatorViewController.mm"
-            timestampString = "450241820.297362"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "451169219.455999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "-touchCalcButton:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MBCalculator/MBCalulatorViewController.mm"
-            timestampString = "450241820.297362"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "-touchCalcButton:"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "PolishCalcWritter::calculatePolishStr(string paramStr)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +26,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/PolishCalcWritter.cpp"
-            timestampString = "450234735.298806"
+            timestampString = "451169219.455999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "generatePolishStr(string &amp;paramStr)"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "PolishCalcWritter::calculatePolishStr(string paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/MBCalulatorViewController.mm"
+            timestampString = "451172757.840002"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "-touchOperandButton:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/MBCalulatorViewController.mm"
+            timestampString = "451171162.723569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-checkAccuracyOfInputOperatorString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450357246.313477"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ompareOperatorsAndAddToStack(stack&lt;char&gt; &amp;paramStack,vector&lt;string&gt; &amp;expresion, char op1)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/PolishCalcWritter.cpp"
-            timestampString = "450234735.298806"
+            timestampString = "450789649.206856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "generatePolishStr(string &amp;paramStr)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "ompareOperatorsAndAddToStack(stack&lt;char&gt; &amp;paramStack,vector&lt;string&gt; &amp;expresion, char op1)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/PolishCalcWritter.cpp"
-            timestampString = "450234735.298806"
+            timestampString = "450789649.206856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "calculatePolishStr(string paramStr)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "ompareOperatorsAndAddToStack(stack&lt;char&gt; &amp;paramStack,vector&lt;string&gt; &amp;expresion, char op1)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,13 +122,173 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/PolishCalcWritter.cpp"
-            timestampString = "450234735.298806"
+            timestampString = "451169219.455999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "PolishCalcWritter::calculateExpression(char opertr,double oprnd1,double oprnd2)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "451169219.455999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "PolishCalcWritter::calculatePolishStr(string paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450789649.206856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "PolishCalcWritter::generatePolishStr(string &amp;paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "451169219.455999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "PolishCalcWritter::calculateExpression(char opertr,double oprnd1,double oprnd2)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "451169219.455999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "PolishCalcWritter::calculatePolishStr(string paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450789649.206856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "PolishCalcWritter::generatePolishStr(string &amp;paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450789649.206856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "PolishCalcWritter::generatePolishStr(string &amp;paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450789649.206856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "PolishCalcWritter::generatePolishStr(string &amp;paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450789649.206856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
             endingLineNumber = "71"
-            landmarkName = "calculatePolishStr(string paramStr)"
-            landmarkType = "7">
+            landmarkName = "PolishCalcWritter::generatePolishStr(string &amp;paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450789649.206856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "PolishCalcWritter::generatePolishStr(string &amp;paramStr)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBCalculator/PolishCalcWritter.cpp"
+            timestampString = "450789649.206856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "PolishCalcWritter::generatePolishStr(string &amp;paramStr)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,29 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/PolishCalcWritter.cpp"
-            timestampString = "450238339.428371"
+            timestampString = "450789649.206856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "calculatePolishStr(string paramStr)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MBCalculator/PolishCalcWritter.cpp"
-            timestampString = "450238339.428371"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "calculatePolishStr(string paramStr)"
-            landmarkType = "7">
+            startingLineNumber = "53"
+            endingLineNumber = "53">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,12 +312,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/MBCalulatorViewController.mm"
-            timestampString = "450241820.297362"
+            timestampString = "451172757.840002"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-touchCalcButton:"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "-touchOperandButton:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,12 +328,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/MBCalulatorViewController.mm"
-            timestampString = "450241820.297362"
+            timestampString = "451171162.723569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "-checkAccuracyOfInputString:"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-checkAccuracyOfInputOperatorString:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,28 +344,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MBCalculator/MBCalulatorViewController.mm"
-            timestampString = "450241820.297362"
+            timestampString = "451172757.840002"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "-checkAccuracyOfInputString:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MBCalculator/MBCalulatorViewController.mm"
-            timestampString = "450241820.297362"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-checkAccuracyOfInputString:"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "-touchOperandButton:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

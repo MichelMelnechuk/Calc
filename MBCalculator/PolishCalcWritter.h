@@ -17,11 +17,17 @@
 
 using namespace std;
 
-double calculateExpression(char opertr,double oprnd1,double oprnd2);
-double calculatePolishStr(string paramStr);
-vector<string> generatePolishStr(string &str);
-void сompareOperatorsAndAddToStack(stack<char> &stack,vector<string> &expresion, char op2);
-double numOperandFromVector(string paramStr);
-int getPrioritet(char s);
+class PolishCalcWritter {
+    double calculateExpression(char opertr,double oprnd1,double oprnd2);
+    double calculateNegativeExpression (vector<string> &expression);
+    vector<string> generatePolishStr(string &str);
+    void сompareOperatorsAndAddToStack(stack<char> &stack,vector<string> &expresion, char op2);
+    double numOperandFromVector(string paramStr);
+    int getPrioritet(char s);
+    bool stringIsDigit(string s);
+public:
+    double calculatePolishStr(string paramStr);
+};
+
 
 
